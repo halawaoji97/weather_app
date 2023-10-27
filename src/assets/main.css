@@ -7,3 +7,100 @@
 
   font-weight: normal;
 }
+
+.weather-icon {
+  font-size: 120px;
+  margin: 30px;
+}
+
+.weather-icon.icon-sunny {
+  color: #fdd835;
+}
+
+.weather-icon.icon-rain {
+  color: #3498db;
+}
+
+.weather-icon.icon-snow {
+  color: #ecf0f1;
+}
+
+.weather-icon.icon-fog {
+  color: #aaa;
+}
+.weather-icon.icon-cloudy {
+  color: #3498db;
+}
+.weather-icon.icon-lightning {
+  color: #f9f904;
+}
+
+.weather-icon.icon-unknown {
+  color: gray;
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.weather-temp {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.weather-desc {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-top: 4px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+  .weather-temp {
+    font-size: 72px;
+  }
+}
